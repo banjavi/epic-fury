@@ -39,8 +39,8 @@ const PHASE_COLORS = {
 };
 
 function App() {
-  const [visibleCount, setVisibleCount] = useState(0);
-  const [autoPlay, setAutoPlay] = useState(true);
+  const [visibleCount, setVisibleCount] = useState(EVENTS.length);
+  const [autoPlay, setAutoPlay] = useState(false);
   const timelineRef = useRef(null);
 
   useEffect(() => {
@@ -155,12 +155,7 @@ function App() {
                 fontFamily: "'JetBrains Mono', monospace", fontSize: "10px",
                 padding: "8px 16px", background: "#2c2420", color: "#f7f5f2",
                 border: "none", cursor: "pointer", letterSpacing: "1px",
-              }}>▶ REPLAY</button>
-              <button onClick={showAll} style={{
-                fontFamily: "'JetBrains Mono', monospace", fontSize: "10px",
-                padding: "8px 16px", background: "transparent", color: "#2c2420",
-                border: "1px solid #2c2420", cursor: "pointer", letterSpacing: "1px",
-              }}>SHOW ALL</button>
+              }}>▶ PLAY TIMELINE</button>
             </div>
           </div>
         </div>
