@@ -25,7 +25,10 @@ const EVENTS = [
   { time: "Feb 28", hour: "~4:30 AM ET", phase: "RETALIATION", title: "\"No Red Lines\"", desc: "Senior Iranian official tells Al Jazeera: \"All American and Israeli assets and interests in the Middle East have become a legitimate target. There are no red lines after this aggression.\"", icon: "★", highlight: true, source: "https://www.khaama.com/senior-iranian-official-no-red-lines-remain-all-u-s-and-israeli-assets-are-legitimate-targets/" },
   { time: "Feb 28", hour: "~5:00 AM ET", phase: "RETALIATION", title: "Regional Airspace Shuts Down", desc: "Iran, Israel, and multiple Gulf states close airspace. Airlines worldwide rerouting. Air India and IndiGo suspend all Middle East flights. Houthis announce resumption of Red Sea attacks.", icon: "◆", highlight: true, source: "https://www.aljazeera.com/news/2026/2/28/airspace-closed-airlines-halt-flights-as-us-israel-attack-iran-responds" },
   { time: "Feb 28", hour: "~6:00 AM ET", phase: "RETALIATION", title: "Appropriations Chair: \"Time of Reckoning\"", desc: "House Appropriations Chairman Tom Cole: \"It's a time of reckoning for those who chant 'Death to America.' The evil Iranian regime must be defanged and dismantled.\"", icon: "★", highlight: true, source: "https://appropriations.house.gov/news/press-releases/cole-statement-operation-epic-fury" },
-  { time: "Feb 28", hour: "Ongoing", phase: "RETALIATION", title: "Conflict Continues", desc: "Active military operations ongoing in both directions. Oil prices spiking. Global markets reacting. Operation expected to last \"as long as needed\" per Netanyahu.", icon: "⚡", highlight: true, source: "https://www.washingtonpost.com/world/2026/02/28/israel-strikes-iran-live-updates/" },
+  { time: "Feb 28", hour: "~7:00 AM ET", phase: "RETALIATION", title: "Missiles Intercepted Over Jerusalem", desc: "Israeli air defense systems intercept and destroy several Iranian missiles over the skies of Jerusalem. Iron Dome and Arrow systems activated nationwide.", icon: "◆", highlight: true, source: "https://www.foxnews.com/live-news/israel-us-launch-attack-on-iran-amid-escalating-protests" },
+  { time: "Feb 28", hour: "~8:00 AM ET", phase: "RETALIATION", title: "Strait of Hormuz Effectively Shut Down", desc: "Oil tankers avoiding the Strait. Ships report Iranian Navy broadcasting that transit is banned. Oil majors and traders suspend shipments. Vessels holding outside or turning back.", icon: "⚡", highlight: true, source: "https://www.bloomberg.com/news/articles/2026-02-28/oil-tankers-avoiding-vital-hormuz-strait-after-us-bombs-iran" },
+  { time: "Feb 28", hour: "~9:00 AM ET", phase: "RETALIATION", title: "Trump Calls for Regime Overthrow", desc: "Trump and Netanyahu both explicitly state the goal is toppling the Iranian regime. Israel confirms it targeted Khamenei and President Pezeshkian directly. Their status unknown.", icon: "★", highlight: true, source: "https://www.npr.org/2026/02/28/nx-s1-5730158/israel-iran-strikes-trump-us" },
+  { time: "Feb 28", hour: "Ongoing", phase: "RETALIATION", title: "Conflict Continues", desc: "Active military operations ongoing in both directions. Oil prices spiking. Strait of Hormuz effectively closed. Global markets bracing for Monday open. Operation expected to last \"as long as needed\" per Netanyahu.", icon: "⚡", highlight: true, source: "https://www.washingtonpost.com/world/2026/02/28/israel-strikes-iran-live-updates/" },
 ];
 
 const PHASE_COLORS = {
@@ -294,9 +297,10 @@ function App() {
               fontSize: "9px", letterSpacing: "2px", color: "#6b6358", marginBottom: "10px",
             }}>SITUATION AS OF FEB 28, 2026</div>
             <div style={{ fontSize: "16px", color: "#f7f5f2", lineHeight: 1.7 }}>
-              Active military operations ongoing. Iran retaliating with missiles across Gulf states.
-              Multiple countries have closed airspace. Houthis have announced resumption of Red Sea attacks.
-              Oil prices spiking. Conflict duration and scope remain uncertain.
+              Active military operations ongoing. Iran retaliating with missiles across Gulf states and Israel.
+              Strait of Hormuz effectively closed to shipping. Multiple countries have closed airspace.
+              Houthis resumed Red Sea attacks. Oil prices spiking. Global markets bracing for Monday.
+              Both Trump and Netanyahu have declared regime change as the objective.
             </div>
             <div style={{
               marginTop: "16px", fontFamily: "'JetBrains Mono', monospace",
@@ -314,7 +318,7 @@ function App() {
         display: "flex", justifyContent: "space-between", flexWrap: "wrap", gap: "8px",
         fontFamily: "'JetBrains Mono', monospace", fontSize: "10px", color: "#a09888",
       }}>
-        <div>Sources: CNN, Al Jazeera, NPR, Reuters, Washington Post, Wikipedia</div>
+        <div>Sources: CNN, Al Jazeera, NPR, Reuters, Washington Post, Bloomberg, HRW</div>
         <div>
           Built by <a href="https://twitter.com/BijanAnjavi" style={{ color: "#c0392b", textDecoration: "none" }}>@BijanAnjavi</a>
         </div>
